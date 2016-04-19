@@ -65,18 +65,24 @@ img {
   ========================================
 */
 h1 {
-  font-size: 40px;
-  font-size: 2.5em;
+  font-size: 32px;
+  font-size: 2em;
   line-height: 1.5em;
-  font-family: "ff-ernestine-web-pro",sans-serif; }
+  font-family: "ff-ernestine-web-pro",serif; }
 
 h3 {
-  font-style: italic; }
+  font-style: italic;
+  line-height: 2.5em;
+  font-family: "ff-ernestine-web-pro",serif; }
 
 h4 {
   font-size: 14px;
   font-size: 0.875em;
-  color: #a9a9aa; }
+  color: #a9a9aa;
+  line-height: 1.8em; }
+
+h5 {
+  line-height: 1em; }
 
 h6 {
   color: #a9a9aa; }
@@ -86,25 +92,42 @@ p, li {
   font-size: 1em;
   line-height: 1.3em; }
 
+span {
+  color: #a9a9aa;
+  font-size: 14px;
+  font-size: 0.875em; }
+
 /*
   ========================================
   Header
   ========================================
 */
+.hamburger-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .hamburger-head ul {
+    display: flex;
+    flex-direction: column; }
+
 header {
   background-color: #f9f9f9;
   padding: .5em; }
+  header nav {
+    position: static; }
+    header nav .dropdown {
+      display: none; }
+  header .search-box {
+    border: 1px solid #2e3542;
+    border-radius: 25px;
+    padding: 5px 10px;
+    margin: 10px auto; }
   header ul {
     display: inline-block;
     width: 100%; }
     header ul li {
       display: inline;
       margin-right: 20px; }
-  header .search-box {
-    border: 1px solid #2e3542;
-    border-radius: 25px;
-    padding: 5px 10px;
-    margin: 10px auto; }
 
 /*
   ========================================
@@ -144,13 +167,46 @@ header {
   .stories .cover-art {
     display: flex;
     flex-direction: column; }
-    .stories .cover-art .blurb {
-      width: 100%;
-      height: 100px;
-      background-color: #f9f9f9;
-      border-bottom: 1px solid #2e3542;
-      border-right: 1px solid #2e3542;
-      border-left: 1px solid #2e3542;
-      text-align: center; }
+    .stories .cover-art .cover {
+      margin: 10px 0; }
+      .stories .cover-art .cover .blurb {
+        width: 100%;
+        padding: 0 10px;
+        background-color: white;
+        border-bottom: 1px solid #2e3542;
+        border-right: 1px solid #2e3542;
+        border-left: 1px solid #2e3542;
+        text-align: center;
+        margin-top: -5px; }
+        .stories .cover-art .cover .blurb .icon {
+          width: 50px;
+          position: relative;
+          margin-top: -20px; }
+        .stories .cover-art .cover .blurb .sub-info {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 1em; }
+
+@media screen and (min-width: 800px) {
+  /*
+    ========================================
+    Header
+    ========================================
+  */
+  .nodesk {
+    display: none; }
+
+  .hamburger-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .hamburger-head ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+
+  header nav .dropdown {
+    display: block !important; } }
 
 /*# sourceMappingURL=style.css.map */
