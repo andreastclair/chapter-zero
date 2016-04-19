@@ -1,0 +1,143 @@
+@import 'reset';
+@import 'colors';
+
+
+@mixin font($em){
+	font-size: ($em*16) + px;
+	font-size: ($em) + em;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	font-family: "freight-sans-pro",sans-serif;
+	background-color: $grey;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*
+  ========================================
+  Type
+  ========================================
+*/
+
+h1 {
+	@include font(2.5);
+	line-height: 1.5em;
+	font-family: "ff-ernestine-web-pro",sans-serif;
+}
+
+h3 {
+	font-style: italic;
+}
+
+h4 {
+	@include font(.875);
+	color: $dkgrey;
+}
+
+h6 {
+	color: $dkgrey;
+}
+
+p, li {
+	@include font(1);
+	line-height: 1.3em;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+// .left-nav {
+// 	background-color: $dkblue;
+// }
+// .right-nav {
+// 	background-color: $orange;
+// }
+
+header {
+	background-color: $white;
+	padding: .5em;
+	ul {
+		display: inline-block;
+		width: 100%;
+		li {
+			display: inline;
+			margin-right: 20px;
+		}
+	}
+	.search-box {
+		border: 1px solid $black;
+		border-radius: 25px;
+		padding: 5px 10px;
+		margin: 10px auto;
+	}
+}
+
+/*
+  ========================================
+  Intro
+  ========================================
+*/
+
+.intro {
+	padding: 2.5em;
+	text-align: center;
+	background-color: $dkblue;
+	button {
+		border-radius: 25px;
+		background-color: $white;
+		border: 1px solid $black;
+		padding: 5px 15px;
+		color: $black;
+		margin: 2em 10px 0 10px;
+	}	
+}
+
+/*
+  ========================================
+  Stories
+  ========================================
+*/
+
+.stories {
+	width: 90%;
+	margin: 1.5em auto;
+	background-color: $grey;
+	ul {
+		display: flex;
+		li {
+			margin-right: 20px;
+		}
+	}
+	.search-box-2 {
+		border-radius: 25px;
+		border: 1px solid $black;
+		padding: 5px 10px;
+		margin: 10px auto;
+	}
+	.cover-art {
+		display: flex;
+		flex-direction: column;
+		.blurb {
+			width: 100%;
+			height: 100px;
+			background-color: $white;
+			border-bottom: 1px solid $black;
+			border-right: 1px solid $black;
+			border-left: 1px solid $black;
+			text-align: center;
+		}
+	}
+}
