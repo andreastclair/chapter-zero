@@ -18,10 +18,21 @@
 body {
 	font-family: "freight-sans-pro",sans-serif;
 	background-color: $grey;
+	color: $black;
 }
 
 img {
 	max-width: 100%;
+}
+
+.horiz-line-mobile {
+	width: 100%;
+	margin: 0 auto 1em auto;
+	border: 1px solid $dkgrey;
+}
+
+.clear-fix {
+	clear: both;
 }
 
 /*
@@ -38,22 +49,23 @@ h1 {
 
 h3 {
 	font-style: italic;
-	line-height: 2.5em;
+	line-height: 1em;
 	font-family: "ff-ernestine-web-pro",serif;
 }
 
 h4 {
 	@include font(.875);
 	color: $dkgrey;
-	line-height: 1.8em;
+	line-height: 0;
 }
 
 h5 {
-	line-height: 1em;
+	line-height: 2.5em;
 }
 
 h6 {
 	color: $dkgrey;
+	line-height: .5em;
 }
 
 p, li {
@@ -61,9 +73,12 @@ p, li {
 	line-height: 1.3em;
 }
 
-span {
-	color: $dkgrey;
-	@include font(.875);
+a {
+	text-decoration: none;
+	color: $black;
+	&:hover {
+		color: $blue;
+	}
 }
 
 /*
@@ -72,37 +87,55 @@ span {
   ========================================
 */
 
-.hamburger-head {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	ul {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
 header {
-	background-color: $white;
+	background-color: $grey;
 	padding: .5em;
+	h1 {
+		text-align: center;
+	}
 	nav {
-	position: static;
+		position: static;
+		li {
+			position: relative;
+		}
 		.dropdown {
 			display: none;
+			padding: 10px;
+			background-color: $white;
+			border: 2px solid $orange;
+			position: absolute;
+			z-index: 1000;
+			width: 140px;
+			text-align: left;
+			.col-1, .col-2, .col-3 {
+				width: 10px;
+			}
+		}
+		li:hover {
+			cursor: pointer;
 		}
 	}
+
+.arrow {
+	width: 15px;
+}	
+
 	.search-box {
 		border: 1px solid $black;
 		border-radius: 25px;
 		padding: 5px 10px;
 		margin: 10px auto;
+		background-color: $white;
+		width: 100%;
 	}
+
 	ul {
 		display: inline-block;
 		width: 100%;
+		text-align: center;
 		li {
 			display: inline;
-			margin-right: 20px;
+			margin: 0 20px;
 		}
 	}
 }
@@ -116,7 +149,8 @@ header {
 .intro {
 	padding: 2.5em;
 	text-align: center;
-	background-color: $dkblue;
+	background-color: $blue;
+	margin: 10px auto;
 	button {
 		border-radius: 25px;
 		background-color: $white;
@@ -125,6 +159,10 @@ header {
 		color: $black;
 		margin: 2em 10px 0 10px;
 	}	
+}
+
+.ad {
+	display: none;
 }
 
 /*
@@ -148,37 +186,52 @@ header {
 		border: 1px solid $black;
 		padding: 5px 10px;
 		margin: 10px auto;
-	}
-	.cover-art {
-		display: flex;
-		flex-direction: column;
-		.cover {
-			margin: 10px 0;
-			.blurb {
-				width: 100%;
-				padding: 0 10px;
-				// height: 150px;
-				background-color: white;
-				border-bottom: 1px solid $black;
-				border-right: 1px solid $black;
-				border-left: 1px solid $black;
-				text-align: center;
-				margin-top: -5px;
-				.icon {
-					width: 50px;
-					position: relative;
-					margin-top: -20px;
-				}
-				.sub-info {
-					display: flex;
-	  				align-items: center;
-	  				justify-content: space-between;
-	  				margin-top: 1em;
-				}
-			}
-		}	
+		width: 100%;
 	}
 }
 
+.cover-art {
+	display: flex;
+	flex-direction: column;
+}
+
+.cover {
+	margin: 10px auto;
+	max-width: 300px;
+	flex-wrap: wrap;
+	.cover-img {
+		box-shadow: 0 3px 3px #888888;
+	}
+	.blurb {
+		width: 100%;
+		padding: 0 10px;
+		height: 150px;
+		background-color: white;
+		border-bottom: 1px solid $black;
+		border-right: 1px solid $black;
+		border-left: 1px solid $black;
+		text-align: center;
+		margin-top: -5px;
+		.icon {
+			width: 50px;
+			position: relative;
+			margin-top: -20px;
+		}
+		.sub-info {
+			display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 1em;
+				img {
+					width: 18px;
+				}
+		}
+	}
+}	
+
+
+
+@import '600';
 @import 'tablet';
+@import '1200';
 

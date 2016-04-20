@@ -14,197 +14,234 @@
 <body>
 	<header>
 
-		<div class="hamburger-head">
-			<h1>Chapter Zero</h1>
-	        <nav>
-	        	<a href="#" class="menu-button nodesk" onclick="toggle_visibility('menu');">MENU</a>
-	        	<div class="dropdown" id="menu">
-		            <ul>
-		                <li>Read</li>
-		                <li>Community</li>
-		                <li>Writing Tips</li>
-		            </ul>
-	            </div>
-	        </nav>
-	    </div>
+	    <h1>Chapter Zero</h1>
+	    <div class="horiz-line-mobile"></div>
+	    <nav>
+            <ul>
+        		<li onclick="toggleVisibility('.dropdown');">Read&nbsp<img class="arrow" src="images/arrow-down.svg">
+					<ul class="dropdown">
+						<li class="col-1"><a href="#">Anime</a></li>
+						<li class="col-1"><a href="#">Books</a></li>
+						<li class="col-1"><a href="#">Cartoons</a></li>
+						<li class="col-2"><a href="#">Comics</a></li>
+						<li class="col-2"><a href="#">Games</a></li>
+						<li class="col-2"><a href="#">Movies</a></li>
+						<li class="col-3"><a href="#">Theater</a></li>
+						<li class="col-3"><a href="#">Television</a></li>
+						<li class="col-3"><a href="#">Crossovers</a></li>
+					</ul>
+        		</li>
+                <li>Community</li>
+                <li>Writing Tips</li>
+            </ul>
+	    </nav>	
 
-		<div class="search-box"><span>Search stories, tags, characters, and authors</span></div>
+		<input type="text" class="search-box" placeholder="Search stories, tags, characters, and authors"</>
 		
-		<ul class="right-nav">
-			<li>Write a Story</li>
-			<li>Sign In</li>
+		<ul>
+			<li><a href="#">Write a Story</a></li>
+			<li><a href="#">Sign In / Sign Up</a></li>
 		</ul>
 
 	</header>
 
 	<section class="intro">
 		<p>Chapter Zero is a free community for fans who love reading and writing about their favorite characters in original storylines. Enter the world of the supernatural, meet new characters inside of old stories, and share your own stories with fellow fans. There is a place for everyone here, where the story never ends.</p>
-		<button>Start Reading</button>
-		<button>Write a Story</button>
+		<button><a href="#">Start Reading</a></button>
+		<button><a href="#">Write a Story</a></button>
 	</section>
 
-	<img src="images/banner.jpg">
+	<img class="ad" src="images/banner.jpg">
 	
 	<section class="stories">
 
 		<ul>
-			<li>NEW</li>
-			<li>POPULAR</li>
-		</ul>	
-		<div class="search-box-2"><span>Search stories, tags, characters, and authors</span></div>
+			<a href="#"><li>NEW</li></a>
+			<a href="#"><li>POPULAR</li></a>
+		</ul>
+
+		<input type="text" class="search-box-2" placeholder="Search stories, tags, characters, and authors"</>
+
+		<div class="clear-fix"></div>
 
 		<div class="cover-art">
 
 			<div class="cover">
-				<img src="images/angel.jpg">
+				<img class="cover-img" src="images/angel.jpg">
 				<div class="blurb">
 					<img class="icon" src="images/tv.svg">
 					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
+					<br>
+					<h3>Happy Hearts Feel Pain</h3>
 					<h5>ANGEL</h5>
 					<div class="sub-info">
 						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
+						<h4><img src="images/eye.svg">&nbsp15,678</h4>
 					</div>	
 				</div>
 			</div>
 
 			<div class="cover">
-				<img src="images/bob.jpg">
+				<img class="cover-img" src="images/buffy.jpg">
 				<div class="blurb">
 					<img class="icon" src="images/tv.svg">
 					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
-					<h5>BOB'S BURGERS</h5>
-					<div class="sub-info">
-						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
-					</div>	
-				</div>
-			</div>
-
-			<div class="cover">
-				<img src="images/bsg.jpg">
-				<div class="blurb">
-					<img class="icon" src="images/tv.svg">
-					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
-					<h5>BATTLESTAR GALACTICA</h5>
-					<div class="sub-info">
-						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
-					</div>	
-				</div>
-			</div>
-
-			<div class="cover">
-				<img src="images/buffy.jpg">
-				<div class="blurb">
-					<img class="icon" src="images/tv.svg">
-					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
+					<br>
+					<h3>She's Out Of Her Mind</h3>
 					<h5>BUFFY THE VAMPIRE SLAYER</h5>
 					<div class="sub-info">
-						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
+						<h4>BeneficialAddiction</h4>
+						<h4><img src="images/eye.svg">&nbsp975</h4>
 					</div>	
 				</div>
 			</div>
 
 			<div class="cover">
-				<img src="images/dollhouse.jpg">
+				<img class="cover-img" src="images/dollhouse.jpg">
 				<div class="blurb">
 					<img class="icon" src="images/tv.svg">
 					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
+					<br>
+					<h3>A Day In The Life Of Echo</h3>
 					<h5>DOLLHOUSE</h5>
 					<div class="sub-info">
-						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
+						<h4>sunnydalesis</h4>
+						<h4><img src="images/eye.svg">&nbsp7,567</h4>
 					</div>	
 				</div>
 			</div>
 
 			<div class="cover">
-				<img src="images/firefly.jpg">
+				<img class="cover-img" src="images/firefly.jpg">
 				<div class="blurb">
 					<img class="icon" src="images/tv.svg">
 					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
+					<br>
+					<h3>Strange Bedfellows</h3>
 					<h5>FIREFLY</h5>
 					<div class="sub-info">
-						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
+						<h4>Selective SciFi Junkie</h4>
+						<h4><img src="images/eye.svg">&nbsp1,852</h4>
 					</div>	
 				</div>
 			</div>
 
 			<div class="cover">
-				<img src="images/fringe.jpg">
+				<img class="cover-img" src="images/bsg.jpg">
 				<div class="blurb">
 					<img class="icon" src="images/tv.svg">
 					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
+					<br>
+					<h3>Changing Rooms</h3>
+					<h5>BATTLESTAR GALACTICA</h5>
+					<div class="sub-info">
+						<h4>Aussiegirl41</h4>
+						<h4><img src="images/eye.svg">&nbsp1,858</h4>
+					</div>	
+				</div>
+			</div>
+
+			<div class="cover">
+				<img class="cover-img" src="images/fringe.jpg">
+				<div class="blurb">
+					<img class="icon" src="images/tv.svg">
+					<h6>TV</h6>
+					<br>
+					<h3>Our Bodies, Possessed By Light</h3>
 					<h5>FRINGE</h5>
 					<div class="sub-info">
-						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
+						<h4>alternatedunham</h4>
+						<h4><img src="images/eye.svg">&nbsp3,782</h4>
 					</div>	
 				</div>
 			</div>
 
 			<div class="cover">
-				<img src="images/harry.jpg">
+				<img class="cover-img" src="images/titanic.jpg">
+				<div class="blurb">
+					<img class="icon" src="images/film.svg">
+					<h6>FILM</h6>
+					<br>
+					<h3>The Unsinkable Ship</h3>
+					<h5>TITANIC</h5>
+					<div class="sub-info">
+						<h4>leo4eva</h4>
+						<h4><img src="images/eye.svg">&nbsp1,658</h4>
+					</div>	
+				</div>
+			</div>
+
+			<div class="cover">
+				<img class="cover-img" src="images/bob.jpg">
 				<div class="blurb">
 					<img class="icon" src="images/tv.svg">
 					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
+					<br>
+					<h3>Stuck In Detention With You</h3>
+					<h5>BOB'S BURGERS</h5>
+					<div class="sub-info">
+						<h4>christian95</h4>
+						<h4><img src="images/eye.svg">&nbsp12,488</h4>
+					</div>	
+				</div>
+			</div>
+
+			<div class="cover">
+				<img class="cover-img" src="images/harry.jpg">
+				<div class="blurb">
+					<img class="icon" src="images/book.svg">
+					<h6>BOOK</h6>
+					<br>
+					<h3>Catch Me If You Can</h3>
 					<h5>HARRY POTTER</h5>
 					<div class="sub-info">
-						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
+						<h4>seeker216</h4>
+						<h4><img src="images/eye.svg">&nbsp8,320</h4>
 					</div>	
 				</div>
 			</div>
 
 			<div class="cover">
-				<img src="images/serenity.jpg">
+				<img class="cover-img" src="images/serenity.jpg">
 				<div class="blurb">
-					<img class="icon" src="images/tv.svg">
-					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
+					<img class="icon" src="images/film.svg">
+					<h6>FILM</h6>
+					<br>
+					<h3>New Friends</h3>
 					<h5>SERENITY</h5>
 					<div class="sub-info">
-						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
+						<h4>AlwayzHuman</h4>
+						<h4><img src="images/eye.svg">&nbsp4,789</h4>
 					</div>	
 				</div>
 			</div>
 
 			<div class="cover">
-				<img src="images/supernatural.jpg">
+				<img class="cover-img" src="images/supernatural.jpg">
 				<div class="blurb">
 					<img class="icon" src="images/tv.svg">
 					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
+					<br>
+					<h3>Locking Horns</h3>
 					<h5>SUPERNATURAL</h5>
 					<div class="sub-info">
-						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
+						<h4>celinaville</h4>
+						<h4><img src="images/eye.svg">&nbsp542</h4>
 					</div>	
 				</div>
 			</div>
 
 			<div class="cover">
-				<img src="images/svu.jpg">
+				<img class="cover-img" src="images/svu.jpg">
 				<div class="blurb">
 					<img class="icon" src="images/tv.svg">
 					<h6>TV</h6>
-					<h3>Happy Is The Heart That Still Feels Pain</h3>
+					<br>
+					<h3>Missing Mother</h3>
 					<h5>LAW AND ORDER : SVU</h5>
 					<div class="sub-info">
-						<h4>ang3l4life</h4>
-						<h4>15,678</h4>
+						<h4>melted by shadows</h4>
+						<h4><img src="images/eye.svg">&nbsp264</h4>
 					</div>	
 				</div>
 			</div>
@@ -213,12 +250,14 @@
 		
 	</section>
 
-	<script type="text/javascript">function toggle_visibility(id) {
-	var e = document.getElementById(id);
-	if(e.style.display == 'block')
-	e.style.display = 'none';
-	else
-	e.style.display = 'block';
+	<script type="text/javascript">function toggleVisibility(target) {
+		var e = document.querySelector(target);
+		if(e.style.display == 'block') {
+			e.style.display = 'none';
+		}
+		else {
+			e.style.display = 'block';
+		}
 	}
 	</script>
 </body>
