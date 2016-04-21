@@ -1,39 +1,36 @@
 @media screen and (min-width:600px) {
 
+
 /*
   ========================================
   Stories
   ========================================
 */
 
-.stories {
-	ul {
-		width: 25%;
-		li {
-			margin-right: 20px;
+.cover-art {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.cover {
+	width: 48%;
+	.blurb {
+		h3 {
+			@include font(1.2);
+		}
+		.more {
+			width: 20px;
+			float: right;
 		}
 	}
-	.search-box-2 {
-		width: 50%;
-		float: left;
-		margin-top: -1.8em;
-		margin-left: 15em;
-	}
-	.cover-art {
-		flex-direction: row;
-		flex-wrap: wrap;
-		.cover {
-			width: 48%;
-			.blurb {
-				.icon {
-				}
-				.sub-info {
-	  				img {
-	  				}
-				}
-			}
-		}	
-	}
+}
+
+.quote {
+	height: 382px;
+}	
+
+.authors {
+	height: 382px;
 }
 
 

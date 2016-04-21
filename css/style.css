@@ -60,9 +60,9 @@ body {
 img {
   max-width: 100%; }
 
-.horiz-line-mobile {
+.horiz-line {
   width: 100%;
-  margin: 0 auto 1em auto;
+  margin: 0 auto;
   border: 1px solid #00838F; }
 
 .clear-fix {
@@ -79,14 +79,22 @@ h1 {
   line-height: 1.5em;
   font-family: "jubilat",sans-serif; }
 
+h2 {
+  font-size: 22.4px;
+  font-size: 1.4em;
+  line-height: 1.3em;
+  font-family: "jubilat",sans-serif; }
+
 h3 {
   font-style: italic;
   line-height: 1em;
-  font-family: "jubilat",sans-serif; }
+  font-family: "jubilat",sans-serif;
+  font-size: 24px;
+  font-size: 1.5em; }
 
 h4 {
-  font-size: 14px;
-  font-size: 0.875em;
+  font-size: 16px;
+  font-size: 1em;
   color: #383838;
   line-height: 0; }
 
@@ -95,7 +103,9 @@ h5 {
 
 h6 {
   color: #383838;
-  line-height: .5em; }
+  line-height: .5em;
+  font-size: 80px;
+  font-size: 5em; }
 
 li {
   font-size: 16px;
@@ -104,11 +114,21 @@ li {
   max-width: 550px;
   margin: 0 auto; }
 
+span {
+  font-style: italic;
+  line-height: 1em;
+  font-family: "jubilat",sans-serif; }
+
 a {
   text-decoration: none;
   color: #383838; }
   a:hover {
     color: #F94A06; }
+
+p {
+  font-size: 19.2px;
+  font-size: 1.2em;
+  line-height: 1.3em; }
 
 /*
   ========================================
@@ -126,21 +146,29 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-items: middle; }
+  align-items: center; }
   .mobile-nav .menu {
-    width: 50px; }
+    width: 30px; }
   .mobile-nav .dropdown {
     width: 30%;
     display: none;
     padding: 10px;
     background-color: #FAFAFA;
-    border: 2px solid #F94A06;
     position: absolute;
     z-index: 1000;
     width: 140px;
     text-align: left; }
   .mobile-nav h1 {
     text-align: center; }
+  .mobile-nav button {
+    background-color: #F94A06;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    text-align: right;
+    color: #FAFAFA; }
+    .mobile-nav button:hover {
+      cursor: pointer; }
 
 /*
   ========================================
@@ -165,18 +193,19 @@ header {
       color: #F94A06;
       text-decoration: underline;
       font-weight: bold; }
-  .intro .social-icons {
-    margin: 1em auto 0 auto;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 400px; }
-    .intro .social-icons img {
-      width: 60px;
-      margin: 0 auto; }
-      .intro .social-icons img:hover {
-        cursor: pointer; }
+
+.social-icons {
+  margin: 1em auto 0 auto;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 400px; }
+  .social-icons img {
+    width: 60px;
+    margin: 0 auto; }
+    .social-icons img:hover {
+      cursor: pointer; }
 
 .ad {
   display: none; }
@@ -188,50 +217,107 @@ header {
 */
 .stories {
   width: 100%;
-  margin: 1.5em auto;
+  margin: 0 auto;
   background-color: #F2F2F2; }
-  .stories ul {
-    margin-left: 12px;
-    display: flex; }
-    .stories ul li {
-      margin-right: 20px; }
-      .stories ul li:hover {
-        color: #F94A06; }
-  .stories .search-box-2 {
-    border-radius: 25px;
-    border: 1px solid #383838;
-    padding: 5px 10px;
-    margin: 10px auto;
-    width: 100%; }
 
 .cover-art {
   display: flex;
   flex-direction: column; }
 
 .cover {
-  margin: 10px auto;
-  flex-wrap: wrap; }
+  margin: 10px auto 10px auto;
+  flex-wrap: wrap;
+  max-width: 400px; }
   .cover .cover-img {
     box-shadow: 0 3px 3px #888888; }
+    .cover .cover-img:hover {
+      cursor: pointer; }
   .cover .blurb {
     width: 100%;
     padding: 0 10px;
-    height: 150px;
+    height: 165px;
     background-color: white;
     box-shadow: 0 3px 3px #aeaeae;
     text-align: center;
     margin-top: -5px; }
+    .cover .blurb:hover {
+      cursor: pointer; }
     .cover .blurb .icon {
       width: 50px;
       position: relative;
       margin-top: -20px; }
-    .cover .blurb .sub-info {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 1em; }
-      .cover .blurb .sub-info img {
-        width: 18px; }
+    .cover .blurb .more {
+      width: 20px;
+      float: right; }
+
+.quote {
+  background-color: #00838F;
+  border-top: 1px solid #0097A7;
+  border-bottom: 1px solid #0097A7; }
+  .quote img {
+    width: 90px;
+    position: absolute;
+    z-index: 0;
+    margin: 1em 0 0 .5em; }
+  .quote p {
+    width: 80%;
+    text-align: center;
+    margin: 3em auto 1em auto;
+    font-size: 20.8px;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-weight: bold;
+    z-index: 1000;
+    position: relative; }
+  .quote .credits {
+    text-align: right;
+    margin: 0 1em 1em 0; }
+    .quote .credits h3 {
+      font-size: 19.2px;
+      font-size: 1.2em;
+      line-height: 1.3em; }
+    .quote .credits h4 {
+      line-height: 1.5em;
+      font-size: 16px;
+      font-size: 1em; }
+
+.authors {
+  background-color: #80DEEA; }
+  .authors h2, .authors h4 {
+    margin: 1em 0 0 .5em;
+    text-align: center; }
+  .authors img {
+    width: 120px;
+    display: block;
+    margin: 1em auto; }
+  .authors p {
+    margin: 1.5em 1em 1em 1em; }
+  .authors .more {
+    width: 20px;
+    float: right; }
+    .authors .more:hover {
+      cursor: pointer; }
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer {
+  text-align: center;
+  background-color: #383838;
+  padding: .5em 2em 2em 2em; }
+  footer p {
+    color: #FAFAFA;
+    margin: 1.7em auto .5em auto; }
+  footer .email {
+    width: 100%;
+    margin: 0 auto 1em auto; }
+  footer .submit {
+    margin: 0 auto 1em auto; }
+  footer a, footer h5 {
+    color: #80DEEA;
+    line-height: 1.3em; }
 
 @media screen and (min-width: 600px) {
   /*
@@ -239,20 +325,24 @@ header {
     Stories
     ========================================
   */
-  .stories ul {
-    width: 25%; }
-    .stories ul li {
-      margin-right: 20px; }
-  .stories .search-box-2 {
-    width: 50%;
-    float: left;
-    margin-top: -1.8em;
-    margin-left: 15em; }
-  .stories .cover-art {
+  .cover-art {
     flex-direction: row;
     flex-wrap: wrap; }
-    .stories .cover-art .cover {
-      width: 48%; } }
+
+  .cover {
+    width: 48%; }
+    .cover .blurb h3 {
+      font-size: 19.2px;
+      font-size: 1.2em; }
+    .cover .blurb .more {
+      width: 20px;
+      float: right; }
+
+  .quote {
+    height: 382px; }
+
+  .authors {
+    height: 382px; } }
 @media screen and (min-width: 800px) {
   /*
     ========================================
@@ -270,18 +360,23 @@ header {
     display: block; }
     .desktop-nav h1 {
       text-align: center; }
-    .desktop-nav .subscribe {
+    .desktop-nav button {
       background-color: #F94A06;
-      width: 100px;
-      height: 35px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 5px;
+      text-align: right;
+      color: #FAFAFA;
       position: absolute;
-      top: 0;
-      right: 0; }
-      .desktop-nav .subscribe p {
+      top: .5em;
+      right: .5em; }
+      .desktop-nav button:hover {
+        cursor: pointer; }
+      .desktop-nav button p {
         position: absolute;
         top: .5em;
-        right: .8em; }
-        .desktop-nav .subscribe p a {
+        right: .5em; }
+        .desktop-nav button p a {
           color: #FAFAFA; }
     .desktop-nav ul {
       display: flex;
@@ -296,7 +391,26 @@ header {
     ========================================
     Stories
     ========================================
-  */ }
+  */
+  .cover {
+    width: 30%; }
+    .cover .blurb h3 {
+      font-size: 16px;
+      font-size: 1em; }
+
+  .quote {
+    height: 347.4px; }
+    .quote p {
+      font-size: 19.2px;
+      font-size: 1.2em; }
+
+  .authors {
+    height: 347.4px; }
+    .authors img {
+      width: 100px; }
+    .authors p {
+      font-size: 16px;
+      font-size: 1em; } }
 @media screen and (min-width: 1000px) {
   .horiz-line-mobile {
     display: none; }

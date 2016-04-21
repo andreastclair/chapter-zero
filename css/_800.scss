@@ -21,17 +21,23 @@ header {
 	h1 {
 		text-align: center;
 	}
-	.subscribe {
+	button {
 		background-color: $orange;
-		width: 100px;
-		height: 35px;
+		border: none;
+		border-radius: 5px;
+		padding: 5px 5px;
+		text-align: right;
+		color: $white;
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: .5em;
+		right: .5em;
+		&:hover {
+			cursor: pointer;
+		}
 		p {
 			position: absolute;
 			top: .5em;
-			right: .8em;
+			right: .5em;
 			a {
 			color: $white;
 			}
@@ -49,14 +55,37 @@ header {
 	}
 }
 
-
 /*
   ========================================
   Stories
   ========================================
 */
 
+.cover {
+	width: 30%;
+	.blurb {
+		h3 {
+			@include font(1);
+		}
+	}
+}	
 
+.quote {
+	height: 347.4px;
+	p {
+		@include font(1.2);
+	}
+}
+
+.authors {
+	height: 347.4px;
+	img {
+		width: 100px;
+	}
+	p {
+		@include font(1);
+	}
+}
 
 
 
