@@ -1,8 +1,4 @@
-@media screen and (min-width:1200px) {
-
-body {
-	background-color: red;
-}
+@media screen and (min-width:1000px) {
 
 .horiz-line-mobile {
 	display: none;
@@ -14,37 +10,25 @@ body {
 */
 
 header {
-	background-color: $grey;
-	padding: .5em;
+	background-color: $white;
+	padding: 0;
 	h1 {
 		text-align: left;
+		width: 20%;
 	}
 	nav {
 		position: static;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background-color: $dkgrey;
 		li {
-			position: relative;
+			position: static;
 		}
-		.dropdown {
-			display: none;
-			padding: 10px;
-			background-color: $white;
-			border: 2px solid $orange;
-			position: absolute;
-			z-index: 1000;
-			width: 140px;
-			text-align: left;
-			.col-1, .col-2, .col-3 {
-				width: 10px;
-			}
+		a {
+			color: $white;
 		}
-		li:hover {
-			cursor: pointer;
-		}
-	}
-
-.arrow {
-	width: 15px;
-}	
+	}	
 
 	.search-box {
 		border: 1px solid $black;
@@ -52,16 +36,25 @@ header {
 		padding: 5px 10px;
 		margin: 10px auto;
 		background-color: $white;
-		width: 100%;
+		width: 30%;
+	}
+
+	.dropdown {
+		left: 3em;
+		color: $black;
+		a {
+			color: $black;
+		}
 	}
 
 	ul {
 		display: inline-block;
-		width: 100%;
+		width: 40%;
 		text-align: center;
 		li {
 			display: inline;
 			margin: 0 20px;
+			color: $white;
 		}
 	}
 }
