@@ -68,7 +68,7 @@ h6 {
 	line-height: .5em;
 }
 
-p, li {
+li {
 	@include font(1);
 	line-height: 1.5em;
 	max-width: 550px;
@@ -91,54 +91,36 @@ a {
 
 header {
 	background-color: $white;
-	padding: .5em;
+	padding: .5em .5em 0 .5em;
+}
+
+.desktop-nav {
+	display: none;
+}
+
+.mobile-nav {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: middle; 
+	.menu {
+		width: 50px;
+	}
+	.dropdown {
+		width: 30%;
+		display: none;
+		padding: 10px;
+		background-color: $white;
+		border: 2px solid $orange;
+		position: absolute;
+		z-index: 1000;
+		width: 140px;
+		text-align: left;
+	}
 	h1 {
 		text-align: center;
 	}
-	nav {
-		position: static;
-		li {
-			position: relative;
-		}
-		.dropdown {
-			display: none;
-			padding: 10px;
-			background-color: $white;
-			border: 2px solid $orange;
-			position: absolute;
-			z-index: 1000;
-			width: 140px;
-			text-align: left;
-			.col-1, .col-2, .col-3 {
-				width: 10px;
-			}
-		}
-		li:hover {
-			cursor: pointer;
-		}
-	}
-
-.arrow {
-	width: 15px;
-}	
-
-	.search-box {
-		border: 1px solid $black;
-		border-radius: 25px;
-		padding: 5px 10px;
-		margin: 10px auto;
-		background-color: $white;
-		width: 100%;
-	}
-
-	ul {
-		display: inline-block;
-		width: 100%;
-		text-align: center;
-		li {
-			display: inline;
-			margin: 0 20px;
-		}
+	p {
 	}
 }
 
@@ -154,19 +136,49 @@ header {
 	background-color: $blue5;
 	margin: 0 auto;
 	color: $grey;
-	button {
-		border-radius: 25px;
-		background-color: $white;
-		border: 1px solid $black;
-		padding: 5px 15px;
-		color: $black;
-		margin: 2em 10px 0 10px;
-	}	
+	p {
+		max-width: 600px;
+		margin: 0 auto;
+		line-height: 1.3em;
+		@include font(1.2);
+	}
+	a {
+		color: $white;
+		&:hover {
+			color: $orange;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+	}
+	.social-icons {
+		margin: 1em auto 0 auto;
+		height: 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 400px;
+		img {
+			width: 60px;
+			margin: 0 auto;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
 }
 
 .ad {
 	display: none;
 }
+
+// button {
+// 		border-radius: 25px;
+// 		background-color: $white;
+// 		border: 1px solid $black;
+// 		padding: 5px 15px;
+// 		color: $black;
+// 		margin: 2em 10px 0 10px;
+// 	}	
 
 /*
   ========================================
@@ -175,7 +187,7 @@ header {
 */
 
 .stories {
-	width: 90%;
+	width: 100%;
 	margin: 1.5em auto;
 	background-color: $grey;
 	ul {
@@ -204,7 +216,6 @@ header {
 
 .cover {
 	margin: 10px auto;
-	max-width: 300px;
 	flex-wrap: wrap;
 	.cover-img {
 		box-shadow: 0 3px 3px #888888;

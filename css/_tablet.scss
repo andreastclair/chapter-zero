@@ -1,18 +1,53 @@
 @media screen and (min-width:800px) {
 	
 
-	body {
-	// background-color: green;
-}
-	
-
 
 /*
   ========================================
   Header
   ========================================
 */
+header {
+	background-color: $white;
+	padding: .5em .5em 0 .5em;
+}
 
+.mobile-nav {
+	display: none;
+}
+
+.desktop-nav {
+	display: block;
+	h1 {
+		text-align: center;
+	}
+	.subscribe {
+		background-color: $orange;
+		width: 100px;
+		height: 35px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		p {
+			position: absolute;
+			top: .5em;
+			right: .8em;
+			a {
+			color: $white;
+			}
+		}
+	}
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: $black;
+		padding: .5em 0;
+		a {
+			color: $white;
+		}
+	}
+}
 
 
 /*
