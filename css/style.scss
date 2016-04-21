@@ -151,7 +151,7 @@ header {
 .intro {
 	padding: 2.5em;
 	text-align: center;
-	background-color: $blue6;
+	background-color: $blue5;
 	margin: 0 auto;
 	color: $grey;
 	button {
@@ -179,6 +179,7 @@ header {
 	margin: 1.5em auto;
 	background-color: $grey;
 	ul {
+		margin-left: 12px;
 		display: flex;
 		li {
 			margin-right: 20px;
@@ -213,9 +214,10 @@ header {
 		padding: 0 10px;
 		height: 150px;
 		background-color: white;
-		border-bottom: 1px solid $black;
-		border-right: 1px solid $black;
-		border-left: 1px solid $black;
+		box-shadow: 0 3px 3px #aeaeae;
+		// border-bottom: 1px solid $black;
+		// border-right: 1px solid $black;
+		// border-left: 1px solid $black;
 		text-align: center;
 		margin-top: -5px;
 		.icon {
