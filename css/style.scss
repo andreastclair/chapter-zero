@@ -28,7 +28,7 @@ img {
 .horiz-line {
 	width: 100%;
 	margin: 0 auto;
-	border: 1px solid $blue6;
+	border: 1px solid $go-dkblue;
 }
 
 .clear-fix {
@@ -109,7 +109,7 @@ p {
 */
 
 header {
-	background-color: $white;
+	background-color: $grey;
 	padding: .5em .5em 0 .5em;
 }
 
@@ -139,12 +139,12 @@ header {
 		text-align: center;
 	}
 	button {
-		background-color: $orange;
+		background-color: $go-green;
 		border: none;
 		border-radius: 5px;
 		padding: 5px 5px;
 		text-align: right;
-		color: $white;
+		color: $black;
 		&:hover {
 			cursor: pointer;
 		}	
@@ -160,7 +160,7 @@ header {
 .intro {
 	padding: 2.5em;
 	text-align: center;
-	background-color: $blue5;
+	background-color: $go-medblue;
 	margin: 0 auto;
 	color: $grey;
 	p {
@@ -168,6 +168,7 @@ header {
 		margin: 0 auto;
 		line-height: 1.3em;
 		@include font(1.2);
+		color: $go-dkblue;
 	}
 	a {
 		color: $white;
@@ -245,6 +246,10 @@ header {
 			position: relative;
 			margin-top: -20px;
 		}
+		p {
+			color: $go-ltblue;
+			margin-top: -10px;
+		}
 		.more {
 			width: 20px;
 			float: right;
@@ -253,7 +258,7 @@ header {
 }
 
 .quote {
-	background-color: $blue6;
+	background-color: $go-green;
 	img {
 		width: 90px;
 		position: absolute;
@@ -285,7 +290,7 @@ header {
 }
 
 .authors {
-	background-color: $blue1;
+	background-color: $go-green;
 	h2, h4 {
 		margin: 1em 0 0 .5em;
 		text-align: center;
@@ -301,6 +306,7 @@ header {
 	.more {
 			width: 20px;
 			float: right;
+			margin-right: .5em;
 			&:hover {
 				cursor: pointer;
 			}
@@ -317,18 +323,19 @@ footer {
 	background-color: $black;
 	padding: .5em 2em 2em 2em;
 	p {
-		color: $white;
+		color: $go-ltblue;
 		margin: 1.7em auto .5em auto;
 	}
 	.email {
 		width: 100%;
 		margin: 0 auto 1em auto;
+		max-width: 600px;
 	}
 	.submit {
 		margin: 0 auto 1em auto;
 	}
 	a, h5 {
-		color: $blue1;
+		color: $go-ltblue;
 		line-height: 1.3em;
 	}
 }
