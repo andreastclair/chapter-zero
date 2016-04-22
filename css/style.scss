@@ -205,6 +205,10 @@ header {
   Stories
   ========================================
 */
+.cover-desk {
+	visibility: hidden;
+	position: absolute;
+}
 
 .stories {
 	width: 100%;

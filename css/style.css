@@ -216,6 +216,10 @@ header {
   Stories
   ========================================
 */
+.cover-desk {
+  visibility: hidden;
+  position: absolute; }
+
 .stories {
   width: 100%;
   margin: 0 auto;
@@ -398,11 +402,9 @@ footer {
     Stories
     ========================================
   */
-  .cover {
-    width: 100%; }
-    .cover .blurb h3 {
-      font-size: 16px;
-      font-size: 1em; }
+  .cover .blurb h3 {
+    font-size: 16px;
+    font-size: 1em; }
 
   .quote {
     width: 100%; }
@@ -471,6 +473,51 @@ footer {
       header ul li {
         display: inline;
         margin: 0 25px;
-        color: #FAFAFA; } }
+        color: #FAFAFA; }
+
+  /*
+    ========================================
+    Stories
+    ========================================
+  */
+  .cover-tab {
+    display: none; }
+
+  .cover-desk {
+    visibility: visible;
+    position: relative; }
+
+  .cover {
+    width: 23%; }
+    .cover .blurb h3 {
+      font-size: 16px;
+      font-size: 1em; }
+
+  .quote {
+    width: 48%; }
+    .quote p {
+      font-size: 19.2px;
+      font-size: 1.2em; }
+
+  .authors {
+    width: 48%;
+    padding: 1.5em .5em .5em 2em; }
+    .authors h2 {
+      text-align: left;
+      margin: 0 0 1em .5em; }
+    .authors img {
+      width: 100px;
+      margin: 1em 0 0 1em; }
+    .authors .author-pic {
+      float: left;
+      text-align: center;
+      margin-bottom: .5em; }
+    .authors .interview {
+      font-size: 16px;
+      font-size: 1em;
+      width: 65%;
+      display: inline;
+      float: left;
+      margin-left: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
