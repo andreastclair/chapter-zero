@@ -349,7 +349,7 @@ footer {
       float: right; }
 
   .quote {
-    width: 100vw; }
+    width: 100%; }
 
   .authors {
     width: 100%; } }
@@ -495,9 +495,16 @@ footer {
 
   .quote {
     width: 48%; }
+    .quote img {
+      width: 100px;
+      margin: 4em 0 0 2em; }
     .quote p {
-      font-size: 19.2px;
-      font-size: 1.2em; }
+      font-size: 22.4px;
+      font-size: 1.4em;
+      width: 70%;
+      margin: 5em auto 1em auto; }
+    .quote .credits {
+      margin: 0 2em 1em 0; }
 
   .authors {
     width: 48%;

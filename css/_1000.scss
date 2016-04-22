@@ -85,10 +85,18 @@ header {
 
 .quote {
 	width: 48%;
-	// height: 347.4px;
-	p {
-		@include font(1.2);
+	img {
+		width: 100px;
+		margin: 4em 0 0 2em;
 	}
+	p {
+		@include font(1.4);
+		width: 70%;
+		margin: 5em auto 1em auto;
+	}
+	.credits {
+		margin: 0 2em 1em 0;
+	}	
 }
 
 .authors {
