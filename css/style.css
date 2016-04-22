@@ -319,6 +319,19 @@ header {
 
 /*
   ========================================
+  Story page
+  ========================================
+*/
+.story-container {
+  width: 70%;
+  margin: 2em auto; }
+  .story-container p {
+    line-height: 1.5em; }
+  .story-container span {
+    font-family: "freight-sans-pro",sans-serif; }
+
+/*
+  ========================================
   Footer
   ========================================
 */
