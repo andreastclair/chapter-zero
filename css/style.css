@@ -224,10 +224,12 @@ header {
   display: flex;
   flex-direction: column; }
 
+.cover-max {
+  max-width: 400px; }
+
 .cover {
   margin: 10px auto 10px auto;
-  flex-wrap: wrap;
-  max-width: 400px; }
+  flex-wrap: wrap; }
   .cover .cover-img {
     box-shadow: 0 3px 3px #888888; }
     .cover .cover-img:hover {
@@ -251,9 +253,7 @@ header {
       float: right; }
 
 .quote {
-  background-color: #00838F;
-  border-top: 1px solid #0097A7;
-  border-bottom: 1px solid #0097A7; }
+  background-color: #00838F; }
   .quote img {
     width: 90px;
     position: absolute;
@@ -339,10 +339,10 @@ footer {
       float: right; }
 
   .quote {
-    height: 382px; }
+    width: 100vw; }
 
   .authors {
-    height: 382px; } }
+    width: 100%; } }
 @media screen and (min-width: 800px) {
   /*
     ========================================
@@ -393,19 +393,19 @@ footer {
     ========================================
   */
   .cover {
-    width: 30%; }
+    width: 100%; }
     .cover .blurb h3 {
       font-size: 16px;
       font-size: 1em; }
 
   .quote {
-    height: 347.4px; }
+    width: 100%; }
     .quote p {
       font-size: 19.2px;
       font-size: 1.2em; }
 
   .authors {
-    height: 347.4px; }
+    width: 100%; }
     .authors img {
       width: 100px; }
     .authors p {

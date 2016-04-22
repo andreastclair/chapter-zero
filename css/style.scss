@@ -216,10 +216,13 @@ header {
 	flex-direction: column;
 }
 
+.cover-max {
+	max-width: 400px;
+}
+
 .cover {
 	margin: 10px auto 10px auto;
 	flex-wrap: wrap;
-	max-width: 400px;
 	.cover-img {
 		box-shadow: 0 3px 3px #888888;
 		&:hover {
@@ -251,8 +254,6 @@ header {
 
 .quote {
 	background-color: $blue6;
-	border-top: 1px solid $blue5;
-	border-bottom: 1px solid $blue5;
 	img {
 		width: 90px;
 		position: absolute;
