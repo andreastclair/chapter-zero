@@ -307,14 +307,16 @@ header {
 	p {
 		margin: 1.5em 1em 1em 1em;
 	}
-	.more {
-			width: 20px;
-			float: right;
-			margin-right: .5em;
-			&:hover {
-				cursor: pointer;
-			}
+	a {
+		color: $go-medblue;
+		&:hover {
+			color: $orange;
 		}
+	}
+	.read-more {
+		@include font(.875);
+		color: $go-medblue;
+	}
 }
 
 /*

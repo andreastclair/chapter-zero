@@ -300,12 +300,14 @@ header {
     margin: 1em auto; }
   .authors p {
     margin: 1.5em 1em 1em 1em; }
-  .authors .more {
-    width: 20px;
-    float: right;
-    margin-right: .5em; }
-    .authors .more:hover {
-      cursor: pointer; }
+  .authors a {
+    color: #51628e; }
+    .authors a:hover {
+      color: #F94A06; }
+  .authors .read-more {
+    font-size: 14px;
+    font-size: 0.875em;
+    color: #51628e; }
 
 /*
   ========================================
@@ -376,7 +378,7 @@ footer {
       border-radius: 5px;
       padding: 5px 5px;
       text-align: right;
-      color: #FAFAFA;
+      color: #383838;
       position: absolute;
       top: .5em;
       right: .5em; }
@@ -508,23 +510,28 @@ footer {
 
   .authors {
     width: 48%;
-    padding: 1.5em .5em .5em 2em; }
+    padding: .5em .5em .5em .5em; }
     .authors h2 {
       text-align: left;
-      margin: 0 0 1em .5em; }
+      margin: 0 0 .5em .5em;
+      font-size: 40px;
+      font-size: 2.5em;
+      color: #91a1ba; }
     .authors img {
-      width: 100px;
+      width: 150px;
       margin: 1em 0 0 1em; }
     .authors .author-pic {
       float: left;
       text-align: center;
-      margin-bottom: .5em; }
+      vertical-align: middle;
+      margin: 2em 0 .5em 0; }
     .authors .interview {
       font-size: 16px;
       font-size: 1em;
-      width: 65%;
+      width: 60%;
       display: inline;
       float: left;
-      margin-left: 1em; } }
+      margin: 2em 0 1em 1.2em;
+      vertical-align: middle; } }
 
 /*# sourceMappingURL=style.css.map */
