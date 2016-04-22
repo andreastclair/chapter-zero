@@ -104,6 +104,27 @@ header {
 	}
 }
 
+.hide-img {
+	display: none;
+}
+.modal-backdrop {
+	width: 100%;
+	display: none;
+}
+.modal {
+	display: block;
+	background: rgba(0, 0, 0, .5);
+	box-shadow: 0 3px 3px #aeaeae;
+	position: absolute;
+	z-index: 999;
+	top: 21em;
+	left: 30%;
+
+	img {
+		max-width: 600px;
+	}
+}
+
 
 
 

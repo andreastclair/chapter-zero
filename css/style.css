@@ -309,6 +309,12 @@ header {
     font-size: 0.875em;
     color: #51628e; }
 
+.modal-backdrop {
+  display: none; }
+
+.modal {
+  display: none; }
+
 /*
   ========================================
   Footer
@@ -433,7 +439,25 @@ footer {
       width: 65%;
       display: inline;
       float: left;
-      margin-left: 3em; } }
+      margin-left: 3em; }
+
+  .hide-img {
+    display: none; }
+
+  .modal-backdrop {
+    width: 100%;
+    display: none; }
+
+  .modal {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 3px #aeaeae;
+    position: absolute;
+    z-index: 999;
+    top: 21em;
+    left: 30%; }
+    .modal img {
+      max-width: 600px; } }
 @media screen and (min-width: 1000px) {
   .horiz-line-mobile {
     display: none; }

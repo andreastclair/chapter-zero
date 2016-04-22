@@ -75,10 +75,16 @@
 					<br>
 					<h3>She's Out Of Her Mind</h3>
 					<h5>BUFFY THE VAMPIRE SLAYER</h5>
-					<img class="more" src="images/arrow.svg">
-					<!-- <div class="sub-info">
-						<h4>BeneficialAddiction</h4>
-					</div> -->	
+					
+					<span class="show-more"><a href="#nothing"><img class="more" src="images/arrow.svg"></a></span>
+
+					<div class="modal-backdrop">
+						<div class="modal">
+							<img src="images/summary.png">
+							<a href="#nothing" class="hide-modal"></a>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
@@ -380,6 +386,7 @@
 		<h5>&copy; 2016 Chapter Zero</h5>
 	</footer>
 
+	<!-- HAMBURGER MENU -->
 	<script type="text/javascript">function toggleVisibility(target) {
 		var e = document.querySelector(target);
 		if(e.style.display == 'block') {
@@ -390,5 +397,8 @@
 		}
 	}
 	</script>
+	<!-- MODAL -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
