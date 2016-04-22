@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter Zero</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+    <script src="js/modernizr.js"></script>
+    <script src="https://use.typekit.net/xsz5hca.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+
+	<header>
+	    <nav class="mobile-nav">
+            <ul>
+        		<li onclick="toggleVisibility('.dropdown');"><a href="#"><img class="menu" src="images/menu.svg"></a>
+					<ul class="dropdown">
+						<li><a href="#">Anime</a></li>
+						<li><a href="#">Books</a></li>
+						<li><a href="#">Cartoons</a></li>
+						<li><a href="#">Comics</a></li>
+						<li><a href="#">Games</a></li>
+						<li><a href="#">Movies</a></li>
+						<li><a href="#">Theater</a></li>
+						<li><a href="#">Television</a></li>
+						<li><a href="#">Crossovers</a></li>
+					</ul>
+        		</li>
+        	</ul>	
+	    	<h1><a href="index.html">&nbspChapter Zero</a></h1>
+    		<button>SUBSCRIBE</button>
+	    </nav>
+	</header>
+
+	<nav class="desktop-nav">
+    	<h1><a href="index.html">Chapter Zero</a></h1>
+    	<button>SUBSCRIBE</button>
+    	<ul>
+    		<li><a href="#">ANIME</a></li>
+			<li><a href="#">BOOKS</a></li>
+			<li><a href="#">CARTOONS</a></li>
+			<li><a href="#">COMICS</a></li>
+			<li><a href="#">GAMES</a></li>
+			<li><a href="#">MOVIES</a></li>
+			<li><a href="#">THEATER</a></li>
+			<li><a href="#">TELEVISION</a></li>
+			<li><a href="#">CROSSOVERS</a></li>
+		</ul>	
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+		<div class="social-icons">
+			<img src="images/facebook.svg">
+			<img src="images/twitter.svg">
+			<img src="images/pinterest.svg">
+			<img src="images/instagram.svg">
+		</div>
+		<p>Subscribe and never miss an issue!</p>
+		<input class="email" type="text" placeholder="Email"></input>
+		<input class="submit" type="submit">
+		<a href="#"><h5>Become an Author</h5></a>
+		<a href="#"><h5>Terms and Conditions</h5></a>
+		<h5>&copy; 2016 Chapter Zero</h5>
+	</footer>
+
+	<!-- HAMBURGER MENU -->
+	<script type="text/javascript">function toggleVisibility(target) {
+		var e = document.querySelector(target);
+		if(e.style.display == 'block') {
+			e.style.display = 'none';
+		}
+		else {
+			e.style.display = 'block';
+		}
+	}
+	</script>
+	<!-- MODAL -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
