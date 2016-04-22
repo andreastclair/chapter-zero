@@ -160,6 +160,8 @@ header {
     text-align: left; }
   .mobile-nav h1 {
     text-align: center; }
+    .mobile-nav h1 a {
+      color: #383838; }
   .mobile-nav button {
     background-color: #afd0c9;
     border: none;
@@ -378,6 +380,8 @@ footer {
     display: block; }
     .desktop-nav h1 {
       text-align: center; }
+      .desktop-nav h1 a {
+        color: #383838; }
     .desktop-nav button {
       background-color: #afd0c9;
       border: none;

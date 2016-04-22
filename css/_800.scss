@@ -20,6 +20,9 @@ header {
 	display: block;
 	h1 {
 		text-align: center;
+		a {
+			color: $black;
+		}
 	}
 	button {
 		background-color: $go-green;
