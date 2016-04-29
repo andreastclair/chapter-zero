@@ -54,10 +54,11 @@ h2 {
 }
 
 h3 {
-	font-style: italic;
 	line-height: 1em;
-	font-family: "jubilat",sans-serif;
-	@include font(1.5);
+	font-family: "freight-sans-pro",sans-serif;
+	@include font(2);
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 h4 {
@@ -67,7 +68,7 @@ h4 {
 }
 
 h5 {
-	line-height: 2.5em;
+	line-height: 2em;
 }
 
 h6 {
@@ -199,10 +200,6 @@ header {
 		}
 	}
 
-.ad {
-	display: none;
-}
-
 /*
   ========================================
   Stories
@@ -239,8 +236,8 @@ header {
 	}
 	.blurb {
 		width: 100%;
-		padding: 0 10px;
-		height: 165px;
+		padding: 0 5px;
+		height: 175px;
 		background-color: white;
 		box-shadow: 0 3px 3px #aeaeae;
 		text-align: center;
@@ -255,7 +252,26 @@ header {
 		}
 		p {
 			color: $go-ltblue;
-			margin-top: -10px;
+			margin: -10px auto 0 auto;
+			width: 30px;
+			// background-color: red;
+		}
+		h5 {
+			// text-align: left;
+			@include font(1.7);
+			font-weight: bold;
+			line-height: 1em;
+			color: rgba(145, 161, 186, .5);
+			// transform: rotate(-90deg);
+			// transform-origin: left top 0;
+			// padding-left: .1em;
+			// background-color: blue;
+		}
+		h3 {
+			text-align: left;
+			margin-left: .8em;
+			height: 90px;
+			// background-color: yellow;
 		}
 		.more {
 			width: 20px;
@@ -321,6 +337,12 @@ header {
 		color: $go-medblue;
 	}
 }
+
+/*
+  ========================================
+  Modal
+  ========================================
+*/
 
 .modal-backdrop {
 	display: none;

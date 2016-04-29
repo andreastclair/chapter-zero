@@ -86,11 +86,12 @@ h2 {
   font-family: "jubilat",sans-serif; }
 
 h3 {
-  font-style: italic;
   line-height: 1em;
-  font-family: "jubilat",sans-serif;
-  font-size: 24px;
-  font-size: 1.5em; }
+  font-family: "freight-sans-pro",sans-serif;
+  font-size: 32px;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 h4 {
   font-size: 16px;
@@ -99,7 +100,7 @@ h4 {
   line-height: 0; }
 
 h5 {
-  line-height: 2.5em; }
+  line-height: 2em; }
 
 h6 {
   color: #383838;
@@ -210,9 +211,6 @@ header {
     .social-icons img:hover {
       cursor: pointer; }
 
-.ad {
-  display: none; }
-
 /*
   ========================================
   Stories
@@ -243,8 +241,8 @@ header {
       cursor: pointer; }
   .cover .blurb {
     width: 100%;
-    padding: 0 10px;
-    height: 165px;
+    padding: 0 5px;
+    height: 175px;
     background-color: white;
     box-shadow: 0 3px 3px #aeaeae;
     text-align: center;
@@ -257,7 +255,18 @@ header {
       margin-top: -20px; }
     .cover .blurb p {
       color: #91a1ba;
-      margin-top: -10px; }
+      margin: -10px auto 0 auto;
+      width: 30px; }
+    .cover .blurb h5 {
+      font-size: 27.2px;
+      font-size: 1.7em;
+      font-weight: bold;
+      line-height: 1em;
+      color: rgba(145, 161, 186, 0.5); }
+    .cover .blurb h3 {
+      text-align: left;
+      margin-left: .8em;
+      height: 90px; }
     .cover .blurb .more {
       width: 20px;
       float: right; }
@@ -311,6 +320,11 @@ header {
     font-size: 0.875em;
     color: #51628e; }
 
+/*
+  ========================================
+  Modal
+  ========================================
+*/
 .modal-backdrop {
   display: none; }
 
@@ -379,6 +393,9 @@ footer {
   .cover {
     width: 48%; }
     .cover .blurb h3 {
+      font-size: 32px;
+      font-size: 2em; }
+    .cover .blurb h5 {
       font-size: 19.2px;
       font-size: 1.2em; }
     .cover .blurb .more {
@@ -404,7 +421,8 @@ footer {
     display: none; }
 
   .desktop-nav {
-    display: block; }
+    display: block;
+    margin-bottom: 1.5em; }
     .desktop-nav h1 {
       text-align: center; }
       .desktop-nav h1 a {
@@ -441,10 +459,6 @@ footer {
     Stories
     ========================================
   */
-  .cover .blurb h3 {
-    font-size: 16px;
-    font-size: 1em; }
-
   .quote {
     width: 100%; }
     .quote p {
@@ -475,20 +489,45 @@ footer {
   .hide-img {
     display: none; }
 
+  /*
+    ========================================
+    Modal
+    ========================================
+  */
   .modal-backdrop {
-    width: 100%;
     display: none; }
 
   .modal {
     display: block;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 3px 3px #aeaeae;
     position: absolute;
     z-index: 999;
-    top: 21em;
-    left: 30%; }
-    .modal img {
-      max-width: 600px; } }
+    top: 8.2em;
+    left: 30%;
+    padding: 2em 7em; }
+    .modal h3 {
+      font-style: normal;
+      line-height: 2em;
+      width: 350px;
+      text-align: left; }
+    .modal h3:first-letter {
+      font-size: 80px;
+      font-size: 5em;
+      float: left;
+      margin-top: .2em;
+      margin-right: .07em; }
+    .modal a {
+      color: #91a1ba;
+      font-style: italic;
+      text-align: right;
+      font-size: 16px;
+      font-size: 1em; }
+
+  .hide-modal {
+    position: absolute;
+    top: 1em;
+    right: 1.2em; } }
 @media screen and (min-width: 1000px) {
   .horiz-line-mobile {
     display: none; }
