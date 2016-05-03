@@ -252,16 +252,20 @@ header {
 		p {
 			color: $go-ltblue;
 			margin: -10px auto 0 auto;
-			width: 30px;
+			width: 55px;
 			// background-color: red;
 		}
 		h3 {
 			text-transform: uppercase;
+			@include font(1.9);
+		}
+		.modal-blurb {
+			text-transform: none;
+			font-weight: normal;
 		}
 		.more {
 			width: 20px;
 			float: right;
-			margin-right: 1em;
 		}
 	}
 }
@@ -344,9 +348,11 @@ header {
 */
 
 .story-container {
-	width: 80%;
-	max-width: 650px;
+	width: 90%;
+	max-width: 680px;
 	margin: 2em auto 2em auto;
+	padding: 1.5em;
+	box-shadow: 0 3px 3px #888888;
 	.buffy-banner {
 		max-width: 100%;
 		text-align: center;
@@ -370,6 +376,16 @@ header {
 	a {
 		text-decoration: underline;
 	}
+}
+
+.sticky-socials {
+	display: none;
+}
+
+.sticky-socials-horiz {
+	margin: 1em auto -.5em auto;
+	width: 50%;
+	max-width: 150px;
 }
 
 /*

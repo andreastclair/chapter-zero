@@ -129,6 +129,27 @@ header {
 	}
 }
 
+/*
+  ========================================
+  Story page
+  ========================================
+*/
+
+.sticky-socials {
+	display: block;
+	img {
+		width: 40px;
+		position: absolute;
+		top: 9em;
+		left: 1em;
+		position: fixed;
+		}
+}
+
+.sticky-socials-horiz {
+	display: none;
+}
+
 
 
 }
