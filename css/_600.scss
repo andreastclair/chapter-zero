@@ -16,10 +16,7 @@
 	width: 48%;
 	.blurb {
 		h3 {
-			@include font(2);
-		}
-		h5 {
-			@include font(1.2);
+			@include font(1.25);
 		}
 		.more {
 			width: 20px;

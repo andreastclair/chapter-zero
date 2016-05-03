@@ -56,9 +56,8 @@ h2 {
 h3 {
 	line-height: 1em;
 	font-family: "freight-sans-pro",sans-serif;
-	@include font(2);
+	@include font(1);
 	font-weight: bold;
-	text-transform: uppercase;
 }
 
 h4 {
@@ -74,7 +73,7 @@ h5 {
 h6 {
 	color: $black;
 	line-height: .5em;
-	@include font(5);
+	@include font(2);
 }
 
 li {
@@ -256,26 +255,13 @@ header {
 			width: 30px;
 			// background-color: red;
 		}
-		h5 {
-			// text-align: left;
-			@include font(1.7);
-			font-weight: bold;
-			line-height: 1em;
-			color: rgba(145, 161, 186, .5);
-			// transform: rotate(-90deg);
-			// transform-origin: left top 0;
-			// padding-left: .1em;
-			// background-color: blue;
-		}
 		h3 {
-			text-align: left;
-			margin-left: .8em;
-			height: 90px;
-			// background-color: yellow;
+			text-transform: uppercase;
 		}
 		.more {
 			width: 20px;
 			float: right;
+			margin-right: 1em;
 		}
 	}
 }
