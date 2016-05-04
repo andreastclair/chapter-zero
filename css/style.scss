@@ -55,7 +55,8 @@ h2 {
 
 h3 {
 	line-height: 1em;
-	font-family: "freight-sans-pro",sans-serif;
+	font-family: "jubilat",sans-serif;
+	// font-family: "freight-sans-pro",sans-serif;
 	@include font(1);
 	font-weight: bold;
 }
@@ -155,10 +156,7 @@ header {
 }
 
 .info {
-	width: 15px;
-	position: absolute; 
-	top: 0;
-	right: 0;
+	display: none;
 }
 
 /*
@@ -256,16 +254,18 @@ header {
 			width: 55px;
 		}
 		h3 {
-			text-transform: uppercase;
+			// text-transform: uppercase;
 			@include font(1.9);
+			font-weight: normal;
 		}
 		.modal-blurb {
 			text-transform: none;
 			font-weight: normal;
 		}
 		.more {
-			width: 20px;
+			width: 25px;
 			float: right;
+			margin-right: .5em;
 		}
 	}
 }

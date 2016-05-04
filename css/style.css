@@ -87,7 +87,7 @@ h2 {
 
 h3 {
   line-height: 1em;
-  font-family: "freight-sans-pro",sans-serif;
+  font-family: "jubilat",sans-serif;
   font-size: 16px;
   font-size: 1em;
   font-weight: bold; }
@@ -173,10 +173,7 @@ header {
       cursor: pointer; }
 
 .info {
-  width: 15px;
-  position: absolute;
-  top: 0;
-  right: 0; }
+  display: none; }
 
 /*
   ========================================
@@ -259,15 +256,16 @@ header {
       margin: -10px auto 0 auto;
       width: 55px; }
     .cover .blurb h3 {
-      text-transform: uppercase;
       font-size: 30.4px;
-      font-size: 1.9em; }
+      font-size: 1.9em;
+      font-weight: normal; }
     .cover .blurb .modal-blurb {
       text-transform: none;
       font-weight: normal; }
     .cover .blurb .more {
-      width: 20px;
-      float: right; }
+      width: 25px;
+      float: right;
+      margin-right: .5em; }
 
 .image-with-title .cover-img {
   box-shadow: 0 3px 3px #888888; }
@@ -482,6 +480,8 @@ footer {
         color: #FAFAFA; }
 
   .info {
+    display: block;
+    position: absolute;
     top: .49em;
     right: 5.5em;
     width: 20px; }
