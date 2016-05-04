@@ -172,6 +172,12 @@ header {
     .mobile-nav button:hover {
       cursor: pointer; }
 
+.info {
+  width: 15px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
 /*
   ========================================
   Intro
@@ -238,6 +244,15 @@ header {
     box-shadow: 0 3px 3px #888888; }
     .cover .cover-img:hover {
       cursor: pointer; }
+  .cover h5 {
+    line-height: 1em;
+    position: absolute;
+    margin-top: -7.3em;
+    margin-left: .1em;
+    font-size: 41.6px;
+    font-size: 2.6em;
+    font-weight: bold;
+    color: white; }
   .cover .blurb {
     width: 100%;
     padding: 0 5px;
@@ -456,6 +471,11 @@ footer {
       padding: .5em 0; }
       .desktop-nav ul a {
         color: #FAFAFA; }
+
+  .info {
+    top: .49em;
+    right: 5.5em;
+    width: 20px; }
 
   /*
     ========================================

@@ -154,6 +154,13 @@ header {
 	}
 }
 
+.info {
+	width: 15px;
+	position: absolute; 
+	top: 0;
+	right: 0;
+}
+
 /*
   ========================================
   Intro
@@ -232,6 +239,17 @@ header {
 		&:hover {
 			cursor: pointer;
 		}
+	}
+	h5 {
+		// background-color: blue;
+		line-height: 1em;
+		position: absolute;
+		// transform: rotate(-90deg);
+		margin-top: -7.3em;
+		margin-left: .1em;
+		@include font(2.6);
+		font-weight: bold;
+		color: white;
 	}
 	.blurb {
 		width: 100%;
