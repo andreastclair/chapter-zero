@@ -78,6 +78,15 @@ header {
 			// @include font(1);
 		}
 	}
+}
+
+.image-with-title {
+	.cover-img {
+	}
+	h5 {
+		@include font(3.18);
+		max-width: 380px;
+	}
 }	
 
 .quote {

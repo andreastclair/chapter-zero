@@ -25,6 +25,15 @@
 	}
 }
 
+.image-with-title {
+	.cover-img {
+	}
+	h5 {
+		@include font(2.4);
+		max-width: 200px;
+	}
+}
+
 .quote {
 	width: 100%;
 }	

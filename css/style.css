@@ -240,19 +240,6 @@ header {
 .cover {
   margin: 10px auto 10px auto;
   flex-wrap: wrap; }
-  .cover .cover-img {
-    box-shadow: 0 3px 3px #888888; }
-    .cover .cover-img:hover {
-      cursor: pointer; }
-  .cover h5 {
-    line-height: 1em;
-    position: absolute;
-    margin-top: -7.3em;
-    margin-left: .1em;
-    font-size: 41.6px;
-    font-size: 2.6em;
-    font-weight: bold;
-    color: white; }
   .cover .blurb {
     width: 100%;
     padding: 0 5px;
@@ -281,6 +268,23 @@ header {
     .cover .blurb .more {
       width: 20px;
       float: right; }
+
+.image-with-title .cover-img {
+  box-shadow: 0 3px 3px #888888; }
+  .image-with-title .cover-img:hover {
+    cursor: pointer; }
+.image-with-title h5 {
+  position: absolute;
+  margin-left: .1em;
+  line-height: 1em;
+  font-size: 42.4px;
+  font-size: 2.65em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 400px; }
+  .image-with-title h5:hover {
+    color: #F94A06;
+    cursor: pointer; }
 
 .quote {
   background-color: #afd0c9; }
@@ -420,6 +424,11 @@ footer {
       width: 20px;
       float: right; }
 
+  .image-with-title h5 {
+    font-size: 38.4px;
+    font-size: 2.4em;
+    max-width: 200px; }
+
   .quote {
     width: 100%; }
 
@@ -482,6 +491,11 @@ footer {
     Stories
     ========================================
   */
+  .image-with-title h5 {
+    font-size: 50.88px;
+    font-size: 3.18em;
+    max-width: 380px; }
+
   .quote {
     width: 100%; }
     .quote p {
@@ -611,6 +625,11 @@ footer {
     .cover .blurb h3 {
       font-size: 16px;
       font-size: 1em; }
+
+  .image-with-title h5 {
+    font-size: 28.8px;
+    font-size: 1.8em;
+    max-width: 250px; }
 
   .quote {
     width: 48%; }

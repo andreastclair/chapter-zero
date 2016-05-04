@@ -234,23 +234,6 @@ header {
 .cover {
 	margin: 10px auto 10px auto;
 	flex-wrap: wrap;
-	.cover-img {
-		box-shadow: 0 3px 3px #888888;
-		&:hover {
-			cursor: pointer;
-		}
-	}
-	h5 {
-		// background-color: blue;
-		line-height: 1em;
-		position: absolute;
-		// transform: rotate(-90deg);
-		margin-top: -7.3em;
-		margin-left: .1em;
-		@include font(2.6);
-		font-weight: bold;
-		color: white;
-	}
 	.blurb {
 		width: 100%;
 		padding: 0 5px;
@@ -271,7 +254,6 @@ header {
 			color: $go-ltblue;
 			margin: -10px auto 0 auto;
 			width: 55px;
-			// background-color: red;
 		}
 		h3 {
 			text-transform: uppercase;
@@ -284,6 +266,28 @@ header {
 		.more {
 			width: 20px;
 			float: right;
+		}
+	}
+}
+
+.image-with-title {
+	.cover-img {
+		box-shadow: 0 3px 3px #888888;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	h5 {
+		position: absolute;
+		margin-left: .1em;
+		line-height: 1em;
+		@include font(2.65);
+		font-weight: bold;
+		color: rgba(255, 255, 255, .5);
+		max-width: 400px;
+		&:hover {
+			color: $orange;
+			cursor: pointer;
 		}
 	}
 }
