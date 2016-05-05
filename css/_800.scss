@@ -148,34 +148,11 @@ header {
 	display: none;
 }
 .modal {
-	display: block;
-	background: rgba(255, 255, 255, .9);
-	box-shadow: 0 3px 3px #aeaeae;
-	position: absolute;
-	z-index: 999;
-	top: 8.2em;
-	left: 30%;
-	padding: 2em 7em;
+	top: 8em;
+	left: 10%;
+	padding: 2em;
+	width: 80%;
 	.modal-blurb {
-		font-style: normal;
-		line-height: 2em;
-		width: 350px;
-		text-align: left;
-	}
-	h3:first-letter {
-		@include font(5);
-		float: left;
-		margin-top: .2em;
-		margin-right: .07em;
-		font-family: "freight-sans-pro",sans-serif;
-		font-style: normal;
-		font-weight: bold;
-	}
-	a {
-		color: $go-ltblue;
-		font-style: italic;
-		text-align: right;
-		@include font(1);
 	}
 }
 .hide-modal {

@@ -380,11 +380,48 @@ header {
   ========================================
 */
 
-.modal-backdrop {
-	display: none;
-}
+// .modal-backdrop {
+// 	display: none;
+// }
+// .modal {
+// 	display: none;
+// }
+
 .modal {
-	display: none;
+	display: block;
+	background: rgba(255, 255, 255, .9);
+	box-shadow: 0 3px 3px #aeaeae;
+	position: absolute;
+	z-index: 999;
+	top: 5em;
+	left: 0;
+	padding: 2em;
+	.modal-blurb {
+		font-style: normal;
+		line-height: 2em;
+		width: 100%;
+		text-align: left;
+	}
+	h3:first-letter {
+		@include font(5);
+		float: left;
+		margin-top: .2em;
+		margin-right: .07em;
+		font-family: "freight-sans-pro",sans-serif;
+		font-style: normal;
+		font-weight: bold;
+	}
+	a {
+		color: $go-ltblue;
+		font-style: italic;
+		text-align: right;
+		@include font(1);
+	}
+}
+.hide-modal {
+	position: absolute;
+	top: 1em;
+	right: 1.2em;
 }
 
 /*
