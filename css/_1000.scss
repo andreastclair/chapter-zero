@@ -71,24 +71,27 @@
 	h2 {
 		text-align: left;
 		margin: 0;
-		@include font(3);
+		@include font(3.1);
 	}
 	img {
-		width: 150px;
+		width: 100%;
 		margin: 1em 0 0 1em;
 	}
 	.author-pic {
 		margin: 3em 0 .5em 1em;
+		width: 20%;
 	}
 	.interview {
 		@include font(1);
-		width: 60%;
+		width: 65%;
 		display: inline;
 		float: left;
-		margin: 2em 0 1em 1.2em;
+		margin: 2em 0 0 2.5em;
 		vertical-align: middle;
 	}
 }
+
+
 
 /*
   ========================================
