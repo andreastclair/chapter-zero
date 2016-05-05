@@ -234,7 +234,8 @@ header {
   flex-direction: column; }
 
 .cover-max {
-  max-width: 400px; }
+  width: 100%;
+  max-width: 550px; }
 
 .cover {
   margin: 10px auto 10px auto;
@@ -702,7 +703,7 @@ footer {
   .sticky-socials {
     display: block; }
     .sticky-socials img {
-      width: 40px;
+      width: 80px;
       position: absolute;
       top: 9em;
       left: 1em;
