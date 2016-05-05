@@ -361,6 +361,9 @@ header {
   Modal
   ========================================
 */
+.modal-backdrop {
+  display: none; }
+
 .modal {
   display: block;
   background: rgba(255, 255, 255, 0.9);
