@@ -566,7 +566,7 @@ footer {
 
   /*
     ========================================
-    Modal
+    Modals
     ========================================
   */
   .modal-backdrop {
@@ -653,8 +653,8 @@ footer {
   .cover {
     width: 23%; }
     .cover .blurb .story-title {
-      font-size: 20.8px;
-      font-size: 1.3em; }
+      font-size: 19.2px;
+      font-size: 1.2em; }
 
   .image-with-title h5 {
     font-size: 30.4px;

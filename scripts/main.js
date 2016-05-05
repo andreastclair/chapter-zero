@@ -12,7 +12,7 @@ $(document).ready(function(){
 		}
 	})
 
-	// SIZE CHART
+	// STORY MODAL
 
 var show = $('.show-more');
 var hide = $('.hide-modal');
@@ -50,7 +50,6 @@ function showText() {
 function hideText() {
   show.html('hide more');
 }
-
 
 
 
