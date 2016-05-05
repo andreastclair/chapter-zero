@@ -15,7 +15,7 @@
 .cover {
 	width: 48%;
 	.blurb {
-		h3 {
+		.story-title {
 			@include font(1.5);
 		}
 		.more {

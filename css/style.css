@@ -139,7 +139,7 @@ header {
   padding: .5em .5em 0 .5em; }
 
 .logo {
-  width: 200px; }
+  display: none; }
 
 .desktop-nav {
   display: none; }
@@ -257,17 +257,27 @@ header {
       color: #91a1ba;
       margin: -10px auto 0 auto;
       width: 55px; }
-    .cover .blurb h3 {
+    .cover .blurb .story-title {
       font-size: 30.4px;
       font-size: 1.9em;
-      font-weight: normal; }
+      font-weight: normal;
+      font-style: italic; }
+    .cover .blurb .year {
+      line-height: 1em;
+      font-size: 24px;
+      font-size: 1.5em;
+      width: 100px;
+      margin: 0 auto;
+      font-weight: bold;
+      color: rgba(145, 161, 186, 0.5); }
     .cover .blurb .modal-blurb {
       text-transform: none;
       font-weight: normal; }
     .cover .blurb .more {
       width: 25px;
       float: right;
-      margin-right: .5em; }
+      margin-right: .5em;
+      margin-top: -1em; }
 
 .image-with-title .cover-img {
   box-shadow: 0 3px 3px #888888; }
@@ -430,7 +440,7 @@ footer {
 
   .cover {
     width: 48%; }
-    .cover .blurb h3 {
+    .cover .blurb .story-title {
       font-size: 24px;
       font-size: 1.5em; }
     .cover .blurb .more {
@@ -465,7 +475,13 @@ footer {
 
   .desktop-nav {
     display: block;
-    margin-bottom: 1.5em; }
+    padding: .5em .5em 0 .5em;
+    margin-bottom: 1.5em;
+    margin-top: -.5em;
+    width: 100%;
+    position: fixed;
+    background-color: #F2F2F2;
+    z-index: 10000; }
     .desktop-nav h1 {
       text-align: center; }
       .desktop-nav h1 a {
@@ -502,13 +518,18 @@ footer {
     position: absolute;
     top: .49em;
     right: 5.5em;
-    width: 20px; }
+    width: 20px;
+    z-index: 999999;
+    position: fixed; }
 
   /*
     ========================================
     Stories
     ========================================
   */
+  .stories {
+    padding-top: 6em; }
+
   .image-with-title h5 {
     font-size: 50.88px;
     font-size: 3.18em;
@@ -559,7 +580,7 @@ footer {
     top: 8.2em;
     left: 30%;
     padding: 2em 7em; }
-    .modal h3 {
+    .modal .modal-blurb {
       font-style: normal;
       line-height: 2em;
       width: 350px;
@@ -583,7 +604,22 @@ footer {
   .hide-modal {
     position: absolute;
     top: 1em;
-    right: 1.2em; } }
+    right: 1.2em; }
+
+  /*
+    ========================================
+    Story page
+    ========================================
+  */
+  .story-container {
+    width: 90%;
+    max-width: 680px;
+    margin: 4em auto 2em auto;
+    padding: 1.5em;
+    box-shadow: 0 3px 3px #888888; }
+    .story-container .buffy-banner {
+      max-width: 100%;
+      text-align: center; } }
 @media screen and (min-width: 1000px) {
   .horiz-line-mobile {
     display: none; }
@@ -593,39 +629,13 @@ footer {
     Header
     ========================================
   */
-  header {
-    background-color: #FAFAFA;
-    padding: 0; }
-    header nav {
-      position: static;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: #4D4D4D; }
-      header nav li {
-        position: static; }
-      header nav a {
-        color: #FAFAFA; }
-    header .search-box {
-      border: 1px solid #F94A06;
-      border-radius: 25px;
-      padding: 5px 10px;
-      margin: 10px auto;
-      background-color: #FAFAFA;
-      width: 30%; }
-    header .dropdown {
-      left: 3em;
-      color: #383838; }
-      header .dropdown a {
-        color: #383838; }
-    header ul {
-      display: inline-block;
-      width: 40%;
-      text-align: center; }
-      header ul li {
-        display: inline;
-        margin: 0 25px;
-        color: #FAFAFA; }
+  .logo {
+    display: block;
+    width: 50px;
+    position: absolute;
+    z-index: -1;
+    left: 42%;
+    top: 0; }
 
   /*
     ========================================
@@ -641,9 +651,9 @@ footer {
 
   .cover {
     width: 23%; }
-    .cover .blurb h3 {
-      font-size: 16px;
-      font-size: 1em; }
+    .cover .blurb .story-title {
+      font-size: 20.8px;
+      font-size: 1.3em; }
 
   .image-with-title h5 {
     font-size: 30.4px;

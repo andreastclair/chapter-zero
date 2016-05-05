@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 572.4 135.9" style="enable-background:new 0 0 572.4 135.9;" xml:space="preserve">
+	 viewBox="0 0 48 135.9" style="enable-background:new 0 0 48 135.9;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F94A06;}
 	.st1{fill:none;}
-	.st2{fill:#383838;}
-	.st3{font-family:'ArcherPro-Semibold';}
-	.st4{font-size:89.3746px;}
-	.st5{letter-spacing:3;}
+	.st2{enable-background:new    ;}
+	.st3{fill:#383838;}
+	.st4{fill:#DDDDDD;}
+	.st5{fill:#AFD0C9;}
 </style>
 <g>
 	<g>
-		<path class="st0" d="M171.3,131.6c48.6,7.4,98.7,0.5,143.5-19.7c21.3-9.6,43.2-22.1,59.7-38.8c14.4-14.5,23.4-35.5,14.1-55.2
+		<path class="st0" d="M-125.7,398.6c48.6,7.4,98.7,0.5,143.5-19.7c21.3-9.6,43.2-22.1,59.7-38.8c14.4-14.5,23.4-35.5,14.1-55.2
 			c-9-19.2-31.4-21.1-47.9-10.5c-18.4,11.8-31.3,35.3-29.8,57.3c1.5,22.6,18.4,40.8,37.9,50.6c22.7,11.4,49.8,15.3,75,16.6
 			c54.7,2.8,111.9-15.3,145.3-60.8c2.3-3.1-2.9-6.1-5.2-3c-26.3,35.8-69.7,54.5-113.1,57.6c-24.2,1.7-48.8-0.6-72.4-6.3
 			c-21.1-5.1-42.7-14.5-54.4-33.7c-12.1-19.8-7.1-44.6,7.3-61.9c11.4-13.6,34.5-25.8,48.6-8.5c13.4,16.6,4.5,39-8.5,52.6
-			c-14.8,15.4-34.5,27-53.6,36.2c-44.7,21.5-95.9,29.4-144.9,21.9C169.1,125.3,167.5,131.1,171.3,131.6L171.3,131.6z"/>
+			c-14.8,15.4-34.5,27-53.6,36.2c-44.7,21.5-95.9,29.4-144.9,21.9C-127.9,392.3-129.5,398.1-125.7,398.6L-125.7,398.6z"/>
 	</g>
 </g>
-<rect x="-158.5" y="19.2" class="st1" width="843.9" height="230.3"/>
-<text transform="matrix(1 0 0 1 -4.4984 84.6348)" class="st2 st3 st4 st5">ChapterZero</text>
+<rect x="-455.5" y="286.2" class="st1" width="843.9" height="230.3"/>
+<text transform="matrix(1 0 0 1 -301.4984 351.6348)" class="st3" style="font-family:'ArcherPro-Semibold'; font-size:89.3746px; letter-spacing:2;">ChapterZero</text>
+<path class="st4" d="M45.4,135.3l-20.2-21.1L4.5,135.3V6.7c0-2.1,1.7-3.8,3.8-3.8h33.3c2.1,0,3.8,1.7,3.8,3.8V135.3z"/>
+<path class="st5" d="M43.6,133.5l-20.2-21.1L2.7,133.5V4.9c0-2.1,1.7-3.8,3.8-3.8h33.3c2.1,0,3.8,1.7,3.8,3.8V133.5z"/>
 </svg>

@@ -9,55 +9,13 @@
   ========================================
 */
 
-header {
-	background-color: $white;
-	padding: 0;
-	h1 {
-		// text-align: left;
-		// width: 20%;
-		// margin-left: 10px;
-	}
-	nav {
-		position: static;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		background-color: $dkgrey;
-		li {
-			position: static;
-		}
-		a {
-			color: $white;
-		}
-	}	
-
-	.search-box {
-		border: 1px solid $orange;
-		border-radius: 25px;
-		padding: 5px 10px;
-		margin: 10px auto;
-		background-color: $white;
-		width: 30%;
-	}
-
-	.dropdown {
-		left: 3em;
-		color: $black;
-		a {
-			color: $black;
-		}
-	}
-
-	ul {
-		display: inline-block;
-		width: 40%;
-		text-align: center;
-		li {
-			display: inline;
-			margin: 0 25px;
-			color: $white;
-		}
-	}
+.logo {
+		display: block;
+		width: 50px;
+		position: absolute;
+		z-index: -1;
+		left: 42%;
+		top: 0;
 }
 
 /*
@@ -77,8 +35,8 @@ header {
 .cover {
 	width: 23%;
 	.blurb {
-		h3 {
-			@include font(1);
+		.story-title {
+			@include font(1.3);
 		}
 	}
 }	
