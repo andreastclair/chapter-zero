@@ -95,8 +95,7 @@ h3 {
 h4 {
   font-size: 16px;
   font-size: 1em;
-  color: #383838;
-  line-height: 0; }
+  color: #383838; }
 
 h5 {
   line-height: 2em; }
@@ -138,6 +137,9 @@ p {
 header {
   background-color: #F2F2F2;
   padding: .5em .5em 0 .5em; }
+
+.logo {
+  width: 200px; }
 
 .desktop-nav {
   display: none; }
@@ -183,7 +185,7 @@ header {
 .intro {
   padding: 2.5em;
   text-align: center;
-  background-color: #51628e;
+  background-color: #00838F;
   margin: 0 auto;
   color: #F2F2F2; }
   .intro p {
@@ -293,7 +295,6 @@ header {
     margin: 1em 0 0 .5em; }
   .quote p {
     width: 80%;
-    text-align: center;
     margin: 3em auto 1em auto;
     font-size: 20.8px;
     font-size: 1.3em;
@@ -314,14 +315,25 @@ header {
       font-size: 1em; }
 
 .authors {
-  background-color: #afd0c9; }
-  .authors h2, .authors h4 {
-    margin: 1em 0 0 .5em;
-    text-align: center; }
-  .authors img {
+  background-color: #afd0c9;
+  padding: .5em; }
+  .authors h2 {
+    text-align: center;
+    font-family: "freight-sans-pro",sans-serif;
+    font-size: 40px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #91a1ba;
+    font-weight: bold;
+    line-height: .6em; }
+  .authors .author-pic img {
     width: 120px;
     display: block;
     margin: 1em auto; }
+  .authors .author-pic h4 {
+    text-align: center;
+    font-size: 24px;
+    font-size: 1.5em; }
   .authors p {
     margin: 1.5em 1em 1em 1em; }
   .authors a {
@@ -381,6 +393,9 @@ header {
   width: 50%;
   max-width: 150px; }
 
+.reading-progress {
+  display: none; }
+
 /*
   ========================================
   Footer
@@ -416,8 +431,8 @@ footer {
   .cover {
     width: 48%; }
     .cover .blurb h3 {
-      font-size: 20.8px;
-      font-size: 1.3em; }
+      font-size: 24px;
+      font-size: 1.5em; }
     .cover .blurb .more {
       width: 20px;
       float: right; }
@@ -431,7 +446,10 @@ footer {
     width: 100%; }
 
   .authors {
-    width: 100%; } }
+    width: 100%; }
+    .authors h2 {
+      font-size: 48px;
+      font-size: 3em; } }
 @media screen and (min-width: 800px) {
   /*
     ========================================
@@ -503,18 +521,16 @@ footer {
       font-size: 1.2em; }
 
   .authors {
-    width: 100%;
-    padding: 1.5em .5em .5em 2em; }
+    width: 100%; }
     .authors h2 {
-      text-align: left;
-      margin: 0 0 0 .5em; }
+      text-align: left; }
     .authors img {
       width: 130px;
       margin: 1em 0 0 1em; }
     .authors .author-pic {
       float: left;
       text-align: center;
-      margin-bottom: .5em; }
+      margin: .5em 0 .5em 2em; }
     .authors .interview {
       font-size: 16px;
       font-size: 1em;
@@ -553,7 +569,10 @@ footer {
       font-size: 5em;
       float: left;
       margin-top: .2em;
-      margin-right: .07em; }
+      margin-right: .07em;
+      font-family: "freight-sans-pro",sans-serif;
+      font-style: normal;
+      font-weight: bold; }
     .modal a {
       color: #91a1ba;
       font-style: italic;
@@ -627,8 +646,8 @@ footer {
       font-size: 1em; }
 
   .image-with-title h5 {
-    font-size: 28.8px;
-    font-size: 1.8em;
+    font-size: 30.4px;
+    font-size: 1.9em;
     max-width: 250px; }
 
   .quote {
@@ -645,22 +664,17 @@ footer {
       margin: 0 2em 1em 0; }
 
   .authors {
-    width: 48%;
-    padding: .5em .5em .5em .5em; }
+    width: 48%; }
     .authors h2 {
       text-align: left;
-      margin: 0 0 .5em .5em;
-      font-size: 40px;
-      font-size: 2.5em;
-      color: #91a1ba; }
+      margin: 0;
+      font-size: 48px;
+      font-size: 3em; }
     .authors img {
       width: 150px;
       margin: 1em 0 0 1em; }
     .authors .author-pic {
-      float: left;
-      text-align: center;
-      vertical-align: middle;
-      margin: 2em 0 .5em 0; }
+      margin: 3em 0 .5em 1em; }
     .authors .interview {
       font-size: 16px;
       font-size: 1em;
@@ -685,6 +699,31 @@ footer {
       position: fixed; }
 
   .sticky-socials-horiz {
-    display: none; } }
+    display: none; }
+
+  .reading-progress {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 9em;
+    right: 1.5em;
+    position: fixed;
+    height: 70px;
+    width: 14%;
+    border-top: 1px solid #383838;
+    border-bottom: 1px solid #383838; }
+    .reading-progress h5 {
+      position: absolute;
+      z-index: 1000;
+      margin-left: 1.8em; }
+    .reading-progress .progress-bar {
+      position: absolute;
+      top: 9em;
+      right: 9.6em;
+      position: fixed;
+      width: 5%;
+      height: 70px;
+      background-color: rgba(175, 208, 201, 0.5);
+      z-index: 0; } }
 
 /*# sourceMappingURL=style.css.map */
